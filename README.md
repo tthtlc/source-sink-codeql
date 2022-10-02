@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ISnackable/DISMFYP2021GRP8/">
-    <img src="G8/frontend/src/assets/img/g8-logo.png" alt="Logo" width="80">
+    <img src="frontend/src/assets/img/g8-logo.png" alt="Logo" width="80">
   </a>
 
   <h3 align="center">DISMFYP2021GRP8</h3>
@@ -35,7 +35,7 @@
 
 <br />
 
-![G8 Pages](G8/frontend/src/assets/img/allphoto.png)
+![G8 Pages](frontend/src/assets/img/allphoto.png)
 
 ## Dependencies
 
@@ -45,7 +45,7 @@ The following tools should be installed before starting:
 
 ## Installation
 
-Use the provided [docker configuration](./G8/docker-compose.yml) to deploy the project:
+Use the provided [docker configuration](docker-compose.yml) to deploy the project:
 
 ```shell
 $ docker-compose up -d
@@ -55,7 +55,7 @@ Then, visit 127.0.0.1:3000, visit the dashboard page and upload a project you wi
 
 You can optionally edit the configuration file depending on your needs:
 
-[Backend Configuration File](./G8/backend/config/index.js)
+[Backend Configuration File](backend/config/index.js)
 
 ### Usage
 
@@ -117,7 +117,7 @@ $ git clone https://github.com/ISnackable/DISMFYP2021GRP8/ --recursive --depth 1
 - [Docker](https://www.docker.com/get-started)
 
 ```shell
-$ docker run -p 3306:3306 -d -v G8/backend/init.sql:/docker-entrypoint-initdb.d --env MYSQL_ROOT_PASSWORD=secret docker.io/library/mariadb:10
+$ docker run -p 3306:3306 -d -v backend/init.sql:/docker-entrypoint-initdb.d --env MYSQL_ROOT_PASSWORD=secret docker.io/library/mariadb:10
 ```
 
 ```shell
@@ -143,12 +143,12 @@ $ sudo service mysql status
 
 You can optionally edit the configuration file depending on your needs:
 
-[Backend Configuration File](./G8/backend/config/index.js)
+[Backend Configuration File](backend/config/index.js)
 
 ### Setup and start the frontend
 
 ```shell
-$ cd G8/frontend
+$ cd frontend
 $ yarn install
 $ yarn start
 ```
@@ -156,7 +156,7 @@ $ yarn start
 ### Setup and start the backend
 
 ```shell
-$ cd G8/backend
+$ cd backend
 $ yarn install
 $ yarn start
 ```
