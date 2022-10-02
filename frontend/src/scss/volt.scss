@@ -1,0 +1,105 @@
+// =========================================================
+// * Volt React Dashboard
+// =========================================================
+
+// * Product Page: https://themesberg.com/product/dashboard/volt-react
+// * Copyright 2021 Themesberg (https://www.themesberg.com)
+// * Official Repository: https://github.com/themesberg/volt-react-dashboard
+// * License: MIT License (https://themesberg.com/licensing)
+
+// * Designed and coded by https://themesberg.com
+
+// =========================================================
+
+// * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap");
+
+// Bootstrap mixins and functions
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Change variables here
+@import "volt/variables";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Vendor
+@import "volt/vendor";
+
+// volt mixins & functions
+@import "volt/mixins";
+@import "volt/functions";
+
+// Utilities
+@import "volt/reboot";
+@import "volt/utilities";
+
+// Layout
+@import "volt/layout";
+
+// Components
+@import "volt/components";
+
+// write your custom styles here!
+.highlight-code {
+  background-color: rgba(255, 232, 178, 0.5) !important;
+  padding: 0em;
+}
+
+.highlight-line {
+  background-color: rgba(226, 19, 19, 0.363);
+  cursor: pointer;
+}
+
+.violation-groups {
+  padding: 0.5em 12rem 0.5em 1em;
+  line-height: 1.8em;
+  position: relative;
+  background-color: #e85a5a;
+  color: #fff;
+  font-weight: 700;
+}
+
+.filepond--item {
+  width: calc(33.33% - 0.5em);
+}
+
+.filepond--root {
+  min-height: 35em;
+}
+
+/* the background color of the filepond drop area */
+.filepond--panel-root {
+  background-color: #ffffff !important;
+}
+
+/* the background color of the file and file panel (used when dropping an image) */
+.filepond--item-panel {
+  background-color: #202535 !important;
+}
+
+.my-modal {
+  min-width: 80%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+ol.counter-list {
+  counter-reset: item;
+}
+ol.counter-list li {
+  display: block;
+  position: relative;
+}
+ol.counter-list li:before {
+  content: counters(item, ".") ".";
+  counter-increment: item;
+  position: absolute;
+  margin-right: 100%;
+  right: 10px; /* space between number and text */
+}
